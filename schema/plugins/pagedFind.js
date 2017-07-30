@@ -1,4 +1,3 @@
-'use strict';
 
 module.exports = exports = function pagedFindPlugin (schema) {
   schema.statics.pagedFind = function(options, cb) {

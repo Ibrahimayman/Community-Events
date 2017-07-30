@@ -1,0 +1,42 @@
+extends ../../layouts/default
+
+block head
+    title add new event
+
+block neck
+    link(rel='stylesheet', href='/views/contact/index.min.css?#{cacheBreaker}')
+
+block feet
+    script(src='/views/events/index.js?#{cacheBreaker}')
+
+block body
+    div.row
+        div.col-sm-6
+            div.page-header
+                h1 add new event
+            form(method="post" action="/events/add")
+                div.form-group
+                    label event name:
+                    input.form-control(type="text", name="name")
+
+                div.form-group
+                label description:
+                textarea.form-control(name="description")
+
+                div.form-group
+                    label date:
+                    input.form-control(type="date", name="date")
+
+                div.form-group
+                    label start time:
+                    input.form-control(type="time", name="StartTime")
+
+                div.form-group
+                    label start time:
+                    input.form-control(type="time", name="endTime")
+
+                div.form-group
+                    button.btn.btn-primary.btn-signup(type='submit') create event
+        div.col-sm-6
+            div.page-header
+                h1 sidebar
