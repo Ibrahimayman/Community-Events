@@ -1,0 +1,26 @@
+extends ../../layouts/default
+
+block head
+    title all events
+
+block body
+    div.row
+        div.col-sm-8
+            div.page-header
+                h1 all events
+
+            ul.events
+                each event,i in data
+                    li
+                        strong #{event.name} &nbsp;&nbsp;&nbsp;
+
+                            i.fa.fa-pencil
+                            a(href="events/edit/#{event._id}") Edit  &nbsp;&nbsp;&nbsp;
+
+                                i.fa.fa-trash
+                                a(id='deleteEvent' data-delete='#{event._id}' href="#") Delete
+
+
+        div.col-sm-4
+            div.page-header
+                h1 sidebar

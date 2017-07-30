@@ -3,20 +3,16 @@ extends ../../layouts/default
 block head
     title #{event.name}
     block body
-        div.row
-            div.col-sm-8
-                div.page-header
-                    h1 #{event.name}
-                    small posted by : #{event.username}
-                ul.event-list
-                    li
-                    strong date : #{event.date}
-                    li
-                    strong StartTime : #{event.StartTime}
-                    li
-                    strong endTime : #{event.endTime}
-                    li
-                    p description : #{event.description}
-            div.col-sm-4
-                div.page-header
-                    h1 sidebar
+
+        h1 #{event.name}
+        small posted by : #{event.username}
+        li
+            strong date : #{event.date}
+            li
+            strong StartTime : #{event.StartTime}
+            li
+            strong endTime : #{event.endTime}
+            li
+            p description : #{event.description}
+
+

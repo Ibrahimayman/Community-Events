@@ -1,17 +1,14 @@
 extends ../../layouts/default
-block head
-    title view events
 
-    block body
-        div.row
-            div.col-sm-8
-                div.page-header
-                    h1 view events
-                ul.events
-                    each event,i in data
-                        li
-                        strong #{event.name} - Posted by #{event.username}
-                        p #{event.description}
-                        a(href='/events/show/#{event._id}',Class='btn btn-default') read more
+block head
+    title events
+
+block body
+
+    each event,i in data
+        h3 #{event.name}
+        p #{event.description}
+        a.btn.btn-default(href='/events/show/#{event._id}') Learn More
+
 
 

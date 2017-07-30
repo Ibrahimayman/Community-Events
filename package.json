@@ -1,12 +1,12 @@
 {
-  "name": "Drywall",
+  "name": "CommunityEvents",
   "version": "0.18.1",
   "private": true,
   "scripts": {
     "start": "grunt"
   },
-  "author": "Reza Akhavan <jedireza@gmail.com> (http://reza.akhavan.me/)",
-  "license": "MIT",
+  "author": "Ibrahim AYman <eng.ibrahim.cer@hotmail.com>",
+  "license": "",
   "engines": {
     "node": ">=4.0.0"
   },
